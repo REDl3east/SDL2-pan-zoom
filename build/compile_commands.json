@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/dalton/projects/SDL/SDL2-pan-zoom/build",
+  "command": "/usr/bin/c++   -I../include -isystem /usr/include/SDL2  -g   -o CMakeFiles/sdl2-pan-zoom.dir/src/main.cpp.o -c /home/dalton/projects/SDL/SDL2-pan-zoom/src/main.cpp",
+  "file": "/home/dalton/projects/SDL/SDL2-pan-zoom/src/main.cpp"
+}
+]
