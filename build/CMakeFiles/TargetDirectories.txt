@@ -1,3 +1,0 @@
-/home/dalton/projects/SDL/SDL2-pan-zoom/build/CMakeFiles/rebuild_cache.dir
-/home/dalton/projects/SDL/SDL2-pan-zoom/build/CMakeFiles/edit_cache.dir
-/home/dalton/projects/SDL/SDL2-pan-zoom/build/CMakeFiles/sdl2-pan-zoom.dir
