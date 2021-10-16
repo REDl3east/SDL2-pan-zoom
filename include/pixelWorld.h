@@ -23,7 +23,7 @@ class PixelWorld {
   int width() { return m_width; }
 
   bool save(const std::string &filename);
-
+  bool save_time(const std::string& directory);
  protected:
   int m_x, m_y, m_width, m_height;
   std::shared_ptr<SDL_Renderer> m_renderer;

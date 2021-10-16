@@ -24,7 +24,7 @@ PixelWorld::~PixelWorld() {
 }
 
 void PixelWorld::point(int x, int y, Uint8 r, Uint8 g, Uint8 b) {
-  m_pixels[x * m_surface->h + y] = (r << 24) | (g << 16) | (b << 8) | 0xFF;
+  m_pixels[y * m_surface->w + x] = (r << 24) | (g << 16) | (b << 8) | 0xFF;
 }
 void PixelWorld::update_position(int xrel, int yrel) {
   m_x += xrel;
@@ -72,4 +72,17 @@ bool PixelWorld::save(const std::string &filename) {
   if (error) return false;
 
   return true;
+}
+
+bool PixelWorld::save_time(const std::string &directory) {
+  time_t rawtime;
+  struct tm *timeinfo;
+  char buffer[80];
+
+  time(&rawtime);
+  timeinfo = localtime(&rawtime);
+
+  strftime(buffer, sizeof(buffer), "%d-%m-%Y %H:%M:%S", timeinfo);
+  std::string str(buffer);
+  return save(directory + "/" + str + ".png");
 }
